@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 
 class App extends PureComponent {
   render() {
-    return (<div>teste</div>)
+    return (<div className='container'>teste</div>)
   }
 }
 

@@ -1,5 +1,6 @@
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const combineLoaders = require('webpack-combine-loaders')
 
 module.exports = {
   entry: './src/index.jsx',
@@ -17,9 +18,6 @@ module.exports = {
       modules: __dirname + '/node_modules'
     }
   },
-  plugins: [
-    new ExtractTextPlugin('styles.css')
-  ],
   module: {
     rules: [{
       test: /.js[x]?$/,
@@ -31,7 +29,16 @@ module.exports = {
       }
     }, {
       test: /\.css$/,
-      loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+      loader: ExtractTextPlugin.extract(
+        'style-loader',
+        combineLoaders([{
+          loader: 'css-loader',
+          query: {
+            modules: true,
+            localIdentName: 'x[name]__[local]___[hash:base64:5]'
+          }
+        }])
+      )
     }, {
       test: /\.woff|.woff2|.ttf|.eot|.svg*.*$/,
       loader: 'file'
