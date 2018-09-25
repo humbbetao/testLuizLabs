@@ -1,7 +1,9 @@
 import React, { PureComponent } from 'react'
+import {MainScreen} from '../components'
+
 class App extends PureComponent {
   render() { 
-    return (  <h2>Consulta de Endereço</h2>) 
+    return (<MainScreen/>)
   }
 }
 App.defaultProps = {

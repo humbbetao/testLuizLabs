@@ -1,9 +1,14 @@
 import React, {PureComponent} from 'react'
+import {Header, Body} from "./index";
 
 class MainScreen extends PureComponent {
     render() {
         return (
-            <h2>Consulta de Endereço</h2>
+            <div className="container">
+                <h2>Consulta de Endereço</h2>
+                <Header/>
+                <Body/>
+            </div>
         )
     }
 }
