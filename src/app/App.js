@@ -1,11 +1,12 @@
 import React, { PureComponent } from 'react'
-
 class App extends PureComponent {
-  render() {
-    return (<div className='container'>teste</div>)
+  render() { 
+    return (  <h2>Consulta de Endereço</h2>) 
   }
 }
+App.defaultProps = {
+}
 
+App.propsTypes = {
+}
 export default App
-
-
