@@ -361,19 +361,50 @@
       <test-file value="$PROJECT_DIR$/src/tests/mainScreen.spec.js" />
       <method v="2" />
     </configuration>
-    <configuration name="MainScreen.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="MainScreen.js" working-dir="$PROJECT_DIR$/src/components">
+    <configuration name="dev" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="production" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="production" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Jest.App" />
-      <item itemvalue="Node.js.MainScreen.js" />
       <item itemvalue="Jest.mainScreen.spec.js" />
+      <item itemvalue="npm.dev" />
+      <item itemvalue="npm.production" />
+      <item itemvalue="npm.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.test" />
+        <item itemvalue="npm.production" />
         <item itemvalue="Jest.App" />
         <item itemvalue="Jest.mainScreen.spec.js" />
-        <item itemvalue="Node.js.MainScreen.js" />
       </list>
     </recent_temporary>
   </component>
