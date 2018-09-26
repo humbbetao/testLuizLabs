@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "axios-jsonp-pro": "^1.1.4",
     "babel-core": "^6.26.3",
     "babel-eslint": "^9.0.0",
     "babel-loader": "^7.1.5",
@@ -40,6 +41,7 @@
     "react-addons-test-utils": "^15.6.2",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.5.2",
+    "react-google-maps": "^9.4.5",
     "react-intl": "^2.6.0",
     "react-jss": "^8.6.1",
     "react-test-renderer": "^16.5.2",

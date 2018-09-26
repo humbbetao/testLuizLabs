@@ -1,10 +1,10 @@
-export default function searchTerm(state = {}, action) {
-    console.log(action.type)
+export default function (state = {location: {}, cep: {}}, action) {
+    console.log(action.payload)
     switch (action.type) {
         case 'SEARCH':
-            console.log(action.payload)
-            console.log(JSON.parse(action.payload[1]), JSON.parse(action.payload[0]))
-            return action.payload[0]
+            return {...state, cep: action.payload}
+        case 'SEARCH_MAP':
+            return {...state, location: action.payload}
         default:
             return state
     }
